@@ -1,10 +1,15 @@
 body{
     margin: auto;
-    
 }
 
 li{
     list-style-type: none;
+    
+}
+
+li a{
+    text-decoration: none;
+    color: #2D2926;
 }
 
 .ai_c{
@@ -28,34 +33,345 @@ li{
     margin: auto;
 }
 
+.txt_color_beige{
+    color: #BC9C7D;
+}
+.bold{
+    font-weight: 700;
+}
+/* header */
+
 .header-container{
     padding: 50px 0px;
 }
 
 .nav-container{
     width: 860px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-callback{
+    padding: 8px 36px 8px 36px;
+    background-color: #BC9C7D;
+    border: none;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 
 
+
+/* banner */
+.banner{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 180px;
+
+    grid-template-columns: repeat(2);
+    grid-column-gap: 40px;
+    grid-row-gap: 0px;
+}
+.banner p{
+    margin: 0;
+    text-align: justify;
+    line-height: 21.12px;
+}
+
+h1{
+    font-family: "Cormorant Garamond";
+    font-weight: 300;
+    font-size: 64px;
+    margin: 0;
+}
+
+.h1-desc{
+    color: #BC9C7D;
+    margin: 0;
+}
 
 .banner-img img{
     height: 632px;
 }
 
+.banner-img{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.banner_head{
+    margin-top: auto;
+
+    grid-column-start: 2;
+}
+
+.banner_description{
+    margin-top: auto;
+
+    grid-column-start: 2;
+
+}
+
+.banner_period{
+    margin-top: auto;
+
+    grid-column-start: 2;
+}
+
+.banner_interest{
+    margin-top: auto;
+
+    grid-column-start: 2;
+    grid-row-end: 5;
+}
+
+
+
+/* accent-photo */
 .accent-photo{
     height: 971px;
     background: url(img/main-img.png) center/cover no-repeat;
     background-attachment: fixed;
 }
 
-.accent-photo img{
+/* collage */
+.collage{
+    padding: 180px 0;
+}
+
+.only_mobile{
+    display: none;
+}
+
+.collage_img{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    padding-bottom: 90px;
+}
+.collage_container{
+    justify-items: center;
+}
+.collage_img img{
+    width: 380px;
+    height: 524px;
+}
+
+.btn-all_project{
+    width: max-content;
+    padding: 8px 36px 8px 36px;
+    background-color: transparent;
+    border: 1px solid #2D2926;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 
 
+/* footer */
 footer{
-    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.footer_container{
+    border-top: solid 1px #D0D0CE;
+    padding: 80px 0;
+}
+
+.footer-menu_head{
+    margin: 0;
+
+    color: #BC9C7D; 
+    padding-bottom: 40px;
+}
+
+
+.footer-connect_head{
+    margin: 0;
+
+    color: #BC9C7D; 
+    padding-bottom: 40px;
+}
+
+.phone_email{
+    margin: 0;
+
+
+    font-family: "Cormorant Garamond";
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 50px;
+    text-align: end;
 }
 
 @media (min-width: 375px) and (max-width: 700px) { 
+    .container {
+        width: 370px;
+        margin: auto;
+    }
 
+    .accent-photo{
+        display: none;
+        background: none;
+    }
+    .only_mobile{
+        display: block;
+    }
+/* banner */
+    .banner{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        padding-bottom: 0px;
+    
+        grid-template-rows: repeat(9) ;
+        grid-row-gap: 10px;
+    }
+    .banner p{
+        margin: 0;
+        text-align: justify;
+        line-height: 21.12px;
+    }
+    
+    h1{
+        font-family: "Cormorant Garamond";
+        font-weight: 300;
+        font-size: 32px;
+        margin: 0;
+    }
+    
+    .h1-desc{
+        color: #BC9C7D;
+        margin: 0;
+    }
+    
+    .banner-img img{
+        height: 632px;
+    }
+    
+    .banner-img{
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    
+    .banner_head{
+        margin-top: auto;
+       
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+    
+    .banner_description{
+        margin-top: auto;   
+        grid-column-start: 1;
+        grid-row-start: 5;   
+    }
+    
+    .banner_period{
+        margin-top: auto;   
+        grid-column-start: 1;
+    }
+    
+    .banner_interest{
+        margin-top: auto ; 
+        grid-column-start: 1;
+        grid-row-start: 13;
+    }
+
+    /* collage */
+.collage{
+    padding: 40px 0;
+}
+
+
+.collage_img{
+    display: flex;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    padding-bottom: 90px;
+}
+.collage_container{
+    justify-items: center;
+}
+.collage_img img{
+    width: 380px;
+    height: 524px;
+}
+
+.btn-all_project{
+    width: max-content;
+    padding: 8px 36px 8px 36px;
+    background-color: transparent;
+    border: 1px solid #2D2926;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+
+/* footer */
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.footer_container{
+    border-top: none;
+    padding: 80px 0;
+    display: block;
+}
+
+.footer-menu_head{
+display: none;
+}
+
+.footer-menu p{
+    text-transform: uppercase;
+    text-align: center;
+
+    margin: 0;
+    padding: 17px 0;
+    color: #BC9C7D;
+    font-size: 16px;
+    border-top: 1px solid #BC9C7D;
+}
+
+.footer-menu p:last-child {
+    border-bottom: 1px solid #BC9C7D;
+
+}
+
+.footer-connect{
+    display: none;
+}
+
+.phone_email{
+    margin: 0;
+    padding: 40px 0;
+
+    font-family: "Cormorant Garamond";
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.telegram{
+    text-transform: uppercase;
+    text-align: center;
+    color: #BC9C7D;
+    font-size: 16px;
+}
+
+.telegram p {
+margin: 0;
+}
 }
